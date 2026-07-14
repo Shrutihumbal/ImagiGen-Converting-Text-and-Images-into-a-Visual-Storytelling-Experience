@@ -79,45 +79,97 @@ We executed our algorithm on the Oxford-102 flower dataset. For the Oxford-102 d
   * End loop
 
 ## Experimental Results:
-### 100 epochs with one set of captions.
-In this experiment, the same dataset has been trained for 100 epochs using a set of captions (texts) as noted below and accordingly the following images are generated from them. Here each epoch took roughly 40 minutes execution time and total 100 epochs took 70 hours that is almost 3 days.
-#### Captions:
-* the flower shown has yellow anther red pistil and bright red petals.
-* this flower has petals that are yellow, white and purple and has dark lines
-* the petals on this flower are white with a yellow center
-* this flower has a lot of small round pink petals.
-* this flower is orange in color, and has petals that are ruffled and rounded.
-* the flower has yellow petals and the center of it is brown.
-* this flower has petals that are blue and white.
-* these white flowers have petals that start off white in color and end in a white towards the tips.
-#### Result:
-![image](https://github.com/Sayak007/Text-to-Image-Synthesis-using-DCGAN/blob/main/Result/train_100.png)
+A. Quantitative Results
+After an extensive 24-hour training period spanning
+approximately 450 epochs, the Image Generator Model 
+achieved significant progress at a resolution of 64*64
+pixels. The model, incorporating both Discriminator
+and Generator networks crucial for GAN-based text
+to-image generation, exhibited visible advancement by
+the 438th epoch. At this point, the Generator loss stood
+at 1.3284586668014526, and the Discriminator loss at
+1.2313429117202759, indicating nearing equilibrium
+between the networks. The diminishing generator loss
+signifies enhanced capability in generating realistic
+images from textual prompts. In contrast, the higher loss
+of the discriminator, following the adversarial training
+principle, underscores the efficacy of the network in
+distinguishing genuine images from synthesized ones 
+For the 128*128 resolution, training lasted 48 hours
+across 1000 epochs, yielding a generator loss of
+0.6933209896087646 and a discriminator loss of
+1.3896995782852173. Analyzing these outcomes, it’s
+evident that the model trained on 64*64 resolution
+images exhibited faster convergence and lower loss
+values compared to the model trained on 128*128
+resolution images. This implies that the 64*64 resolution
+model reached a more stable state in terms of image
+generation within a shorter training period. Table2.
+Experimental analysis on 102-flowers dataset with
+128*128 resolution
 
-### 200 epochs with another set of captions.
-In this experiment the same dataset has been trained for 200 epochs using a set of captions(texts) as noted below and accordingly the following images are generated from them. Here each epoch took roughly 1hour of execution time and total 200 epochs took almost 10 days.
-#### Captions:
-* the flower shown has purple and white petals
-* this flower has petals that are yellow and purple and has dark lines
-* the petals on this flower are red with a yellow center
-* this flower has a lot of small round orange petals
-* this flower is dark orange in color, and has petals that are ruffled and rounded
-* the flower has yellow petals and the center of it is brown
-* this flower has petals that are yellow and white
-* these flowers have pink colored petals
+B. Qualitative Results
+The textual description accompanying the flower image
+emphasizes the distinct visual attributes. Subsequently,
+upon examining the test output result, it reveals a mul
+titude of smaller images. These images are the gener
+ated outputs produced by the model in response to the
+provided textual description. The presence of numerous
+smaller images suggests the model’s attempts to interpret
+and generate various visual representations corresponding
+to the textual description of a purple-coloured flower
+with oval-shaped petals. This observation underscores
+the model’s efforts in generating diverse outputs to en
+capsulate the potential variations and nuances inherent
+in the given textual input, aiming to produce a range
+of plausible floral images that align with the described characteristics. Further evaluation and analysis of these
+outputs would provide deeper insights into the model’s
+ability to interpret textual descriptions
 
 #### Result:
 ![image](https://github.com/Sayak007/Text-to-Image-Synthesis-using-DCGAN/blob/main/Result/train_200.png)
 
 ## Report
-* [Project Report](https://github.com/Sayak007/Text-to-Image-Synthesis-using-DCGAN/blob/main/Project%20Report.pdf)
+* https://drive.google.com/file/d/1Ej1CG2DD9E8114FHshV007oLOQTcIpDe/view?usp=sharing 
 
 ## References
 
-* Generative Adversarial Nets by Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, Yoshua Bengio; Part of Advances in Neural Information Processing Systems 27 (NIPS 2014).
-* Generate the corresponding Image from Text Description using Modified GAN-CLS Algorithm by Fuzhou Gong and Zigeng Xia ; University of Chinese Academy of Sciences; arXiv:1806.11302v1 [cs.LG] 29 Jun 2018.
-* Generative Adversarial Text to Image Synthesis by Scott Reed, Zeynep Akata, Xinchen Yan, Lajanugen Logeswaran, Bernt Schiele, Honglak Lee ; Neural and Evolutionary Computing (cs.NE); Computer Vision and Pattern Recognition ; ICML 2016.
-* Skip-Thought Vectors by Ryan Kiros, Yukun Zhu, Ruslan Salakhutdinov, Richard S. Zemel, Antonio Torralba, Raquel Urtasun, Sanja Fidler; Computation and Language (cs.CL); Machine Learning (cs.LG) ; arXiv:1506.06726.
-* [Tensor flow Implementation of Deep Convolutional Generative Adversarial Networks](https://www.tensorflow.org/tutorials/generative/dcgan)
-* Automated flower classification over a large number of classes, Nilsback, M-E. And Zisserman, A.; Proceedings of the Indian Conference on Computer Vision, Graphics and Image Processing (2008).
-* [DCGAN Torch Code](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
-* [Text to Image Synthesis Using Thought Vectors | Paarthneekhara](https://github.com/paarthneekhara/text-to-image)
+[1] Liao, W., Hu, K., Yang, M. Y., and Rosenhahn, B.,”Text to image
+generation with semantic-spatial aware gan,” in Proceedings
+of the IEEE/CVF conference on computer vision and pattern
+recognition, pp. 18187-18196, 2022.
+[2] Zhu, M., Pan, P., Chen, W., and Yang, Y., ”Dm-gan: Dynamic
+memory generative adversarial networks for text-to-image
+synthesis,”in Proceedings of the IEEE/CVF conference on
+computer vision and pattern recognition, pp.5802-5810, 2019.
+[3] Liu, X., Gong, C., Wu, L., Zhang, S., Su, H., and Liu,
+Q, ”sedream: Training-free text-to-image generation with
+improved clip + gan space optimization,”in arXiv preprint
+arXiv:2112.01573, 2021.
+[4] Ruan, S., Zhang, Y., Zhang, K., Fan, Y., Tang, F., Liu, Q., and
+Chen E, ”Dae-gan: Dynamic aspect-aware gan for text-to-image
+synthesis,” in Proceedings of the IEEE/CVF International
+Conference on Computer Vision, pp. 13960-13969, 2021
+[5] Wang, H., Lin, G., Hoi, S. C., and Miao, C., ”Cycle-consistent
+inverse GAN for text-to-image synthesis,” in Proceedings of the
+29th ACM International Conference on Multimedia, pp. 630-638,
+2021
+[6] Hang, C., and Peng, Y, ”Stacking VAE and GAN for context
+aware text-to-image generation,” in 018 IEEE Fourth international
+conference on multimedia big data (BigMM)(pp. 1-5), 2018.
+[7] Tan H., Liu X., Yin B., and Li X,”DC-GAN: Distribution
+regularization for text-to-image generation”, in Transactions
+on Neural Networks and Learning Systems,Vol. 8, pp. 153113
+153122, 2022.
+[8] Mahajan, S., Nighrunkar, M., Kulkarni, A., Joshi, A., and
+Sawant, S.,”Theft detection system using cGAN approach. In
+AIP Conference Proceedings”, in AIP Publishing,Vol. 2745, No.
+1, 2023.
+[9] Tao M., Tang H., Wu F., Jing X. Y., Bao B. K., and Xu, C.,”Df
+gan: A simple and effective baseline for text-to-image synthesis”,
+in
+Proceedings of the IEEE/CVF Conference on Computer
+Vision and Pattern Recognition,(pp. 16515-16525),2022.
+[10] Ding, M., Zheng, W., Hong, W., and Tang, J.,”Cogview2: Faster
+and better text-to-image generation via hierarchical transformers”,
+in Neural Information Processing Systems,35,16890-16902,2022
