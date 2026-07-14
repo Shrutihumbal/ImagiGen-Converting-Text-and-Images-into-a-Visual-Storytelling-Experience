@@ -79,7 +79,7 @@ We executed our algorithm on the Oxford-102 flower dataset. For the Oxford-102 d
   * End loop
 
 ## Experimental Results:
-A. Quantitative Results
+A. Quantitative Results - 
 After an extensive 24-hour training period spanning
 approximately 450 epochs, the Image Generator Model 
 achieved significant progress at a resolution of 64*64
@@ -108,7 +108,7 @@ generation within a shorter training period. Table2.
 Experimental analysis on 102-flowers dataset with
 128*128 resolution
 
-B. Qualitative Results
+B. Qualitative Results - 
 The textual description accompanying the flower image
 emphasizes the distinct visual attributes. Subsequently,
 upon examining the test output result, it reveals a mul
@@ -138,38 +138,46 @@ ability to interpret textual descriptions
 generation with semantic-spatial aware gan,” in Proceedings
 of the IEEE/CVF conference on computer vision and pattern
 recognition, pp. 18187-18196, 2022.
+
 [2] Zhu, M., Pan, P., Chen, W., and Yang, Y., ”Dm-gan: Dynamic
 memory generative adversarial networks for text-to-image
 synthesis,”in Proceedings of the IEEE/CVF conference on
 computer vision and pattern recognition, pp.5802-5810, 2019.
+
 [3] Liu, X., Gong, C., Wu, L., Zhang, S., Su, H., and Liu,
 Q, ”sedream: Training-free text-to-image generation with
 improved clip + gan space optimization,”in arXiv preprint
 arXiv:2112.01573, 2021.
+
 [4] Ruan, S., Zhang, Y., Zhang, K., Fan, Y., Tang, F., Liu, Q., and
 Chen E, ”Dae-gan: Dynamic aspect-aware gan for text-to-image
 synthesis,” in Proceedings of the IEEE/CVF International
 Conference on Computer Vision, pp. 13960-13969, 2021
+
 [5] Wang, H., Lin, G., Hoi, S. C., and Miao, C., ”Cycle-consistent
 inverse GAN for text-to-image synthesis,” in Proceedings of the
 29th ACM International Conference on Multimedia, pp. 630-638,
 2021
+
 [6] Hang, C., and Peng, Y, ”Stacking VAE and GAN for context
 aware text-to-image generation,” in 018 IEEE Fourth international
 conference on multimedia big data (BigMM)(pp. 1-5), 2018.
+
 [7] Tan H., Liu X., Yin B., and Li X,”DC-GAN: Distribution
 regularization for text-to-image generation”, in Transactions
 on Neural Networks and Learning Systems,Vol. 8, pp. 153113
 153122, 2022.
+
 [8] Mahajan, S., Nighrunkar, M., Kulkarni, A., Joshi, A., and
 Sawant, S.,”Theft detection system using cGAN approach. In
 AIP Conference Proceedings”, in AIP Publishing,Vol. 2745, No.
 1, 2023.
+
 [9] Tao M., Tang H., Wu F., Jing X. Y., Bao B. K., and Xu, C.,”Df
 gan: A simple and effective baseline for text-to-image synthesis”,
-in
-Proceedings of the IEEE/CVF Conference on Computer
+in Proceedings of the IEEE/CVF Conference on Computer
 Vision and Pattern Recognition,(pp. 16515-16525),2022.
+
 [10] Ding, M., Zheng, W., Hong, W., and Tang, J.,”Cogview2: Faster
 and better text-to-image generation via hierarchical transformers”,
 in Neural Information Processing Systems,35,16890-16902,2022
